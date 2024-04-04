@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{> links}}
+    <title>Admin Dashboard</title>
+</head>
+
+<body>
+
+    {{!--? Navbar --}}
+
+    <nav id="Navbar" class="px-5">
+
+        <div class="Logo-Section">
+            <a class="Logo navbar-brand text-white" href="#"><img src="./Images/QuizLogo.webp" alt=""></a>
+            <button class="navbar-toggler text-white" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+
+        <div class="Links-Section d-flex align-items-center justify-content-center">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-black-10 active " href="#">Admin<span class="sr-only">(current)</span></a>
+                </li>
+
+            </ul>
+        </div>
+        <div class="Logout-Section d-flex align-items-center">
+            <div>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/logout"> <Button class="logout-button">Log Out</Button><span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    {{!--? Open Create Quiz Section --}}
+
+    {{!-- <section class="Open-Create-Quiz-Section">
+
+    </section> --}}
+
+    {{!--? Create Quiz Section --}}
+
+    <section class="Main-Admin-Dashboard-Section px-5 w-100 h-auto main-section">
+
+        <div class="d-flex px-5 justify-content-center flex-column">
+
+            <form action="/quiz" method="POST">
+
+
+                <h1 class="Details-h1">Enter Your Details</h1>
+                {{!--? Title --}}
+                <div class="form-group">
+                    <input type="text" class="form-control" id="title" name="title" autocomplete="off"
+                        aria-describedby="emailHelp" placeholder="Enter Title">
+                </div>
+                {{!--? Email --}}
+                <div class="form-group">
+                    <input type="email" class="form-control" id="Email" autocomplete="off" name="adminEmail"
+                        aria-describedby="emailHelp" placeholder="Enter Your Email">
+                </div>
+                {{!--? Name --}}
+                <div class="form-group">
+                    <input type="text" class="form-control" id="Name" autocomplete="off" name="adminName"
+                        aria-describedby="emailHelp" placeholder="Enter Your Name">
+                </div>
+
+                <h1 class="Question-h1">Enter Your Quiz</h1>
+
+                {{!--* Questions --}}
+
+                <div class="questions">
+
+                    {{!--? Question --}}
+
+                    <div class="QuizQuestion">
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="question" autocomplete="off" name="question"
+                                aria-describedby="emailHelp" placeholder="Enter Question">
+                        </div>
+
+
+                        {{!--* Options --}}
+                        <div class="options">
+                            <h5>Options</h5>
+                            <div class="form-group">
+                                <input type="text" id="option1" class="form-control" autocomplete="off" name="option"
+                                    placeholder="Option A">
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" id="option2" class="form-control" autocomplete="off" name="option"
+                                    placeholder="Option B">
+
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" id="option3" class="form-control" autocomplete="off" name="option"
+                                    placeholder="Option C">
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" id="option4" class="form-control" autocomplete="off" name="option"
+                                    placeholder="Option D">
+                            </div>
+
+                            <label for="correctOption">Correct Option :</label>
+                            <select id="correctOption" name="correctOption" required>
+                                <option value="option1">Option 1</option>
+                                <option value="option2">Option 2</option>
+                                <option value="option3">Option 3</option>
+                                <option value="option4">Option 4</option>
+                            </select>
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <button onclick="addQuiz()" class="Add-Quiz-button" type="button">Add Quiz</button>
+                <button type="submit" class="Finish-Quiz-button">Done</button>
+        </div>
+        </form>
+
+    </section>
+
+
+
+</body>
+
+<script>
+    /*
+========================
+* Select True Option 
+========================
+*/
+
+
+    const correctOptionSelect = document.getElementById('correctOption');
+
+    const checkboxes = document.querySelectorAll('input[type="text"][name="option"]');
+
+    correctOptionSelect.addEventListener('change', function () {
+
+        const selectedOption = correctOptionSelect.value;
+
+        checkboxes.forEach(function (checkbox) {
+            if (checkbox.id === selectedOption) {
+                checkbox.value = 'true';
+            } else {
+                checkbox.value = 'false';
+            }
+        });
+    });
+
+</script>
+
+{{> scripts}}
+
+</html>

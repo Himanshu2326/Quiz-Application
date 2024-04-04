@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>links}}
+    <title>Login Login</title>
+</head>
+
+<body class="body">
+
+    <div class="div-box d-flex w-100 min-vh-100 align-items-center justify-content-center">
+        <div class="main-div-index d-flex align-items-center justify-content-between">
+            <div class="left-side d-flex w-100 h-100">
+                <div
+                    class="left-text p-5 w-100 d-flex flex-column align-items-center justify-content-center text-white">
+                    <h1>Welcome To</h1>
+                    <h3>Quizeee</h3>
+                    <img class="left-Img" src="./Images/Loginbg.webp" alt="">
+                    <p class="text-center">"Welcome to our quiz app! Test your knowledge, challenge yourself, and have
+                        fun with a variety of engaging quizzes. Let's begin!" </p>
+                </div>
+            </div>
+            <div class="right-side d-flex flex-column w-100 h-100 align-items-center justify-content-center p-5">
+                <div class="main-div-login">
+                    <div class="Back-Btns">
+                        <button class="Back-Btn">Go Back</button>
+                    </div>
+                    <h3>Hey <span style="color: #a821de;">Student</span> Login Please</h3>
+                    <form action="/student" method="POST">
+                        <div class="form-group">
+                            <label for="email">Email address</label>
+                            <input type="email" name="email" class="form-control" id="email"
+                                aria-describedby="emailHelp" placeholder="Enter email">
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" name="name" class="form-control" id="name" placeholder="Enter Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" name="password" class="form-control" id="password"
+                                placeholder="Password">
+                        </div>
+                        <button type="submit" class="button">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+<script>
+    /*
+========================
+* Go Back Button  
+========================
+*/
+
+    let BackBtns = document.querySelector('.Back-Btn');
+    BackBtns.addEventListener('click', () => {
+        window.history.back()
+    })
+</script>
+{{>scripts}}
+
+</html>

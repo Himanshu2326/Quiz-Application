@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>links}}
+    <title>Quizee</title>
+</head>
+
+<body class="body">
+
+
+    <div class="div-box d-flex w-100 min-vh-100 align-items-center justify-content-center ">
+        <div class="main-div-index d-flex align-items-center justify-content-between">
+            <div class="left-side d-flex w-100 h-100">
+                <div
+                    class="left-text p-5 w-100 d-flex flex-column align-items-center justify-content-center text-white">
+                    <h1>Welcome To</h1>
+                    <h3>Quizeee</h3>
+                    <img class="left-Img" src="./Images/Loginbg.webp" alt="">
+                    <p class="text-center">"Welcome to our quiz app! Test your knowledge, challenge yourself, and have
+                        fun with a variety of engaging quizzes. Let's begin!" </p>
+                </div>
+            </div>
+            <div class="right-side d-flex flex-column w-100 h-100 align-items-center justify-content-center p-5">
+                <a href="/admin"><button class="button my-4">Login as Admin</button></a>
+                <a href="/student"><button class="button">Login as Student</button></a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+{{>scripts}}
+
+</html>

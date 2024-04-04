@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>links}}
+    <title>Quizee</title>
+</head>
+
+<body>
+
+    <nav id="Navbar" class="px-5">
+
+        <div class="Logo-Section">
+            <a class="Logo navbar-brand text-white" href="#"><img src="./Images/QuizLogo.webp" alt=""></a>
+            <button class="navbar-toggler text-white" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+
+        <div class="Links-Section d-flex align-items-center justify-content-center">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-black-10 active " href="#">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link text-black-10" href="#">Quizzes<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link text-black-10" href="#">Create Quiz<span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+        <div class="Logout-Section d-flex align-items-center">
+            <div>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/signup"> <Button class="logout-button">Sign Up</Button><span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- ? First Section -->
+    <section class="first-section px-5 d-flex align-items-center justify-content-center">
+
+        <div class="d-flex justify-content-between w-100">
+
+            <div class="leftSide w-50 d-flex align-items-lg-start justify-content-center flex-column p-4">
+                <h1>Play,<span style="color: rgb(135, 9, 185);"> Create</span> and Test Your Knowledge With Quizz!</h1>
+                <p>"Welcome to our quiz! Explore, learn, and challenge yourself with a diverse range of captivating
+                    quizzes on our platform."</p>
+                <div class="quizBtns d-flex ">
+                    <a href="/admin"><button class="p-2 Hero-btn">Admin Login</button></a>
+                    <a href="/student"><button class="p-2 Hero-btn2">Student Login</button></a>
+                </div>
+            </div>
+            <div class="rightSide">
+                <img src="./Images/Hero.webp" alt="">
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Second Section  -->
+    <section class="second-section px-5 d-flex align-items-center justify-content-center">
+        <div class="card-container px-5 w-100 ">
+
+            <div class="card d-flex align-items-center justify-content-center">
+                <div class="img">
+                    <img src="./Images/card1.webp" alt="">
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis consectetur illo perspiciatis
+                    aliquid omnis quasi!</p>
+                <button class="card-btn">Explore Quiz</button>
+            </div>
+            <div class="card d-flex align-items-center justify-content-center">
+                <div class="img">
+                    <img src="./Images/card2.jpg" alt="">
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis consectetur illo perspiciatis
+                    aliquid omnis quasi!</p>
+                <button class="card-btn">Explore Quiz</button>
+            </div>
+            <div class="card d-flex align-items-center justify-content-center">
+                <div class="img">
+                    <img src="./Images/card3.webp" alt="">
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis consectetur illo perspiciatis
+                    aliquid omnis quasi!</p>
+                <button class="card-btn">Explore Quiz</button>
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <!--? Third Section  -->
+
+    <section class="third-section px-5 d-flex align-items-center justify-content-center">
+
+        <div class="px-5 w-100 d-flex flex-column  align-items-center justify-content-center">
+
+            <div class="text d-flex align-items-center justify-content-center flex-column">
+
+                <h1>How To Create Quiz!!!</h1>
+                <h4>Just Do These Simple Steps</h4>
+
+            </div>
+            <div class="steps">
+
+                <div class="step d-flex flex-column align-items-center text-center">
+                    <img src="./Images/login.webp" alt="">
+                    <h5>Step 1 ➡️ Login!</h5>
+                    <p>Firstly Login as Admin</p>
+
+                </div>
+                <div class="step d-flex flex-column align-items-center text-center">
+                    <img src="./Images/CreateQuiz.webp" alt="">
+                    <h5>Step 2 ➡️ Create Quiz!</h5>
+                    <p>Create and Add Quiz as many You Want</p>
+                </div>
+                <div class="step d-flex flex-column align-items-center text-center">
+
+                    <img src="./Images/finish.webp" alt="">
+                    <h5>Step 3 ➡️ Finish Quiz!</h5>
+                    <p>Finish It, Your Quiz Creates Successfully</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--? Fourth section  -->
+    <section class="fourth-section px-5 d-flex align-items-center justify-content-center">
+
+        <div class="overlay"></div>
+        <div class="overlay-text d-flex align-items-center flex-column justify-content-center px-5 w-100 ">
+            <h1>Test Your Knowledge, Quiz with Confidence</h1>
+            <h5>Unlock Knowledge, Explore, and Conquer Together</h5>
+            <a href="/signup"> <button class="Get-Started-Btn">Get Started, its Free</button> </a>
+            <p>No Payment Needed</p>
+        </div>
+    </section>
+
+
+    <!--? Fifth section  -->
+    <section class="fifth-section px-5 d-flex align-items-center justify-content-center">
+
+        <div class="fifth-section-div px-5 d-flex align-items-center justify-content-center">
+            <div class="left">
+
+                <p>The best way to ask questions, explore ideas, and let student show what they know. </p>
+                <h1>Start motivating students!<span style="color: rgb(141, 34, 241);"> In minutes.</span></h1>
+
+                <a href="/signup"> <button class="Get-Started-Btn">Sign up Now</button></a>
+            </div>
+
+            <div class="right">
+                <img src="./Images/students.webp" alt="">
+            </div>
+        </div>
+
+    </section>
+
+
+    <!--? Footer Section  -->
+
+    <footer class="footer px-5">
+
+        <div class="footer-div px-5 mx-5 d-flex align-items-center justify-content-between">
+
+            <div class="footer-logo">
+                <img src="./Images/QuizLogo.webp" alt="">
+                <p>Welcome to our quiz! Explore, learn, and challenge yourself with a diverse range of captivating
+                    quizzes on our platform !</p>
+            </div>
+
+            <div class="Explore">
+                <h5>Explore</h5>
+                <div class="links d-flex flex-column">
+                    <a href="#"><span>Create a quiz</span></a>
+                    <a href="#"><span>Participate</span></a>
+                    <a href="#"><span>About</span></a>
+                </div>
+
+            </div>
+
+            <div class="Find-Yours">
+                <h5>Find Yours</h5>
+                <div class="links d-flex flex-column">
+                    <a href="#"><span>Privacy Polices</span></a>
+                    <a href="#"><span>Contac Us</span></a>
+                    <a href="#"><span>Quiz</span></a>
+                </div>
+            </div>
+
+            <div class="social-links">
+                <h5>Social Links</h5>
+
+                <div class="links d-flex justify-content-between">
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </footer>
+
+
+</body>
+{{>scripts}}
+
+</html>

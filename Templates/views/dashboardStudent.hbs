@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>links}}
+    <title>Student Dashboard</title>
+</head>
+
+<body>
+
+    {{!--? Navbar --}}
+
+    <nav id="Navbar" class="px-5">
+
+        <div class="Logo-Section">
+            <a class="Logo navbar-brand text-white" href="#"><img src="./Images/QuizLogo.webp" alt=""></a>
+            <button class="navbar-toggler text-white" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+
+        <div class="Links-Section d-flex align-items-center justify-content-center">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-black-10 active text-capitalize " href="#">Student : {{data.name}} <span
+                            class="sr-only">(current)</span></a>
+                </li>
+
+            </ul>
+        </div>
+        <div class="Logout-Section d-flex align-items-center">
+            <div>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/logout"> <Button class="logout-button">Log Out</Button><span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section  pr-5 py-5 d-flex align-items-center justify-content-between w-100 h-100">
+
+        <div class="results">
+            <h1>Your Results</h1>
+            <div class="Result">
+                {{#if QuizTitle}}
+                <h3>Quiz : {{QuizTitle}}</h3>
+                <h3>score : {{score}}</h3>
+                {{else}}
+                <h3> No Data </h3>
+                {{/if}}
+
+            </div>
+        </div>
+
+        <div class="Quizes py-5">
+            {{#each quiz as |val key| }}
+            <div class="Quiz">
+                <h1>{{val.title}}</h1>
+                <h3>{{val.questions.length}} Questions</h3>
+                <a href="/quizTest/{{val.id}}?studentName={{../data.name}}&studentEmail={{../data.email}}">
+                    <button id="{{val.id}}" class="Participate-Btn">Participate</button>
+                </a>
+
+            </div>
+            {{/each}}
+        </div>
+
+    </section>
+
+
+
+    {{> scripts}}
+</body>
+
+</html>

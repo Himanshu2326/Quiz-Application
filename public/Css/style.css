@@ -1,0 +1,618 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Murecho:wght@100..900&family=Noto+Sans+KR:wght@100..900&family=Varta:wght@300..700&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+
+:root {
+    --btn-gradient1: linear-gradient(to right, #5735f9, #7f3cc2);
+    --btn-gradient-rev: linear-gradient(to right, #7f3cc2, #5735f9);
+}
+
+
+#Navbar {
+    height: 65px;
+    width: 100%;
+    background: white;
+    z-index: 10;
+    position: fixed;
+    display: flex;
+    box-shadow: 0px 0px 5px 0px #910cdf;
+    justify-content: space-between;
+}
+
+.Logo img {
+    height: 65px;
+}
+
+.Links-Section ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.Links-Section li {
+    padding: 0px 10px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 0 10px;
+    transition: .3s;
+
+}
+
+.Links-Section li a {
+    color: #923be9;
+    transition: .3s;
+    border-radius: 20px;
+
+}
+
+.Links-Section li a:hover {
+    color: white;
+    background: var(--btn-gradient1);
+    transition: .3s;
+    padding: 7px 10px;
+    border-radius: 20px;
+}
+
+.Links-Section li .active {
+    color: white;
+    background: var(--btn-gradient1);
+    transition: .3s;
+    padding: 7px 10px;
+    border-radius: 20px;
+}
+
+.button {
+    border: none;
+    background: var(--btn-gradient1);
+    color: white;
+    padding: 12px 15px;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    width: 20rem;
+    transition: 0.3s ease-in-out;
+}
+
+.logout-button,
+.Add-Quiz-button {
+    border: none;
+    background: var(--btn-gradient-rev);
+    color: white;
+    padding: 7px 10px;
+    border-radius: 20px;
+    font-size: 1rem;
+    transition: 0.3s ease-in-out;
+    width: 10rem;
+}
+
+
+.button:hover,
+.Add-Quiz-button:hover,
+.logout-button:hover {
+    background: var(--btn-gradient1);
+    scale: 1.05;
+    transition: 0.3s ease-in-out;
+}
+
+/* 
+===============================
+? => Index Section 
+===============================
+*/
+
+
+/*? Loign Page Css  */
+
+.main-div-index {
+    height: 100vh;
+    width: 100%;
+    box-shadow: #7f3cc2 1px 1px 12px;
+}
+
+.main-div-login {
+    border-radius: 10px;
+    box-shadow: 9px -9px 0px 2px #b2adff;
+    padding: 0 5rem;
+    background: white;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+
+.Back-Btns {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: absolute;
+    top: 1rem;
+    padding: 0 1rem;
+}
+
+.Back-Btn,
+.Finish-Quiz-button {
+    border: none;
+    background: linear-gradient(to right, #dbddff, #f2e3ff);
+    color: black;
+    padding: 7px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    width: 7rem;
+    transition: 0.3s ease-in-out;
+}
+
+.Back-Btn:hover,
+.Finish-Quiz-button:hover {
+    background: linear-gradient(to right, #f5ebff, #edfff7);
+    color: #7d35f9;
+    scale: 1.03;
+    box-shadow: 0px 0px 5px 0.2px #7d35f9;
+    transition: .3s;
+}
+
+.main-div-login h3 {
+    margin: 2rem;
+}
+
+.right-side {
+    background-color: #f9f9f9;
+}
+
+.left-side {
+    background: radial-gradient(#800ff1 25%, #3559f9);
+    width: 35% !important;
+}
+
+.left-Img {
+    height: 25rem;
+}
+
+.left-side p {
+    margin: 1rem 0;
+    max-width: 80%;
+    font-size: 0.9rem;
+    color: rgb(225, 225, 225);
+}
+
+.left-side h3 {
+    font-size: 2.7rem;
+    font-family: "Mochiy Pop One", sans-serif;
+}
+
+.user-name {
+    text-transform: capitalize;
+}
+
+
+/*? First  Section  */
+
+
+.div-box {
+    height: calc(100vh - 65px);
+}
+
+.first-section {
+    height: calc(100vh - 0px);
+    padding: 0 8rem !important;
+}
+
+
+.leftSide h1,
+p {
+    max-width: 30rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.leftSide h1 {
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 900;
+}
+
+.Hero-btn {
+    border: none;
+    background: var(--btn-gradient-rev);
+    ;
+    color: white;
+    padding: 7px 10px;
+    border-radius: 12px;
+    font-size: 1rem;
+    transition: 0.3s ease-in-out;
+    width: 10rem;
+    margin-right: 12px;
+}
+
+.Hero-btn:hover {
+    background: var(--btn-gradient1);
+    scale: 1.05;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0px 0px 1px 0.1px #7d35f9;
+}
+
+.Hero-btn2 {
+    border: none;
+    background: linear-gradient(to right, #dbddff, #f2e3ff);
+    color: rgb(0, 0, 0);
+    padding: 7px 10px;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 400;
+    transition: 0.3s ease-in-out;
+    width: 10rem;
+    margin-right: 12px;
+}
+
+.Hero-btn2:hover {
+    background: linear-gradient(to right, #f5ebff, #edfff7);
+    color: #7d35f9;
+    scale: 1.05;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0px 0px 5px 0.2px #7d35f9;
+}
+
+
+.rightSide img {
+    height: 32rem;
+}
+
+
+/*? Second  Section  */
+
+.second-section {
+    /* background: var(--btn-gradient1); */
+    background: linear-gradient(to top, #fff 50%, #7d35f9 50%);
+    height: 35rem;
+    margin: 2rem 0;
+
+}
+
+.card-container {
+    display: grid;
+    border-radius: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    background: linear-gradient(to top, #7f3cc2, #5735f9);
+    padding: 30px 0;
+}
+
+
+.card {
+    padding: 25px 25px;
+    background: linear-gradient(to top, #5735f9 50%, #fff 50%);
+    text-align: center;
+    max-width: 22rem;
+    margin: 0 2rem;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    box-shadow: -6px -5px 0px 1px mediumslateblue;
+
+}
+
+
+.card .img img {
+    height: 200px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 0px lightgrey;
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: #e6e6e6;
+    margin: 1rem;
+}
+
+.card .card-btn {
+    background: var(--btn-gradient1);
+    border: none;
+    padding: 6px 18px;
+    border-radius: 10px;
+    font-weight: 500;
+    color: #fff;
+    box-shadow: 0px 0px 5px 0.2px white;
+    transition: .3s;
+}
+
+.card .card-btn:hover {
+    background: linear-gradient(to right, #f5ebff, #edfff7);
+    color: #7d35f9;
+    scale: 1.05;
+    box-shadow: 0px 0px 5px 0.2px #7d35f9;
+    transition: .3s;
+}
+
+
+/*? Third Section  */
+
+.third-section {
+    height: 25rem;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+}
+
+.steps {
+    margin: 2rem 0;
+}
+
+.steps .step img {
+    border-radius: 50%;
+    width: 50%;
+    margin-bottom: 0.8rem;
+}
+
+.steps {
+    display: grid;
+    border-radius: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+}
+
+/*? fourth-section  */
+.fourth-section {
+    background: url(../Images/card.webp) center center / cover no-repeat;
+    height: 25rem;
+    background-size: 50rem;
+    position: relative;
+    background-attachment: fixed;
+    /* margin: 2rem 0; */
+    margin-top: 2rem;
+}
+
+.overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to top, #8000ffb2, #2b00ffa9);
+
+}
+
+.fourth-section .overlay-text h1 {
+    color: white;
+    z-index: 2;
+    margin-bottom: 1rem;
+}
+
+.fourth-section .overlay-text h5 {
+    color: #e4e4e4;
+    z-index: 2;
+}
+
+.fourth-section .overlay-text p {
+    color: white;
+    z-index: 2;
+}
+
+.fourth-section a {
+    z-index: 2;
+}
+
+.Get-Started-Btn {
+    border: none;
+    background: linear-gradient(to right, #dbddff, #f2e3ff);
+    color: black;
+    padding: 12px 0px;
+    border-radius: 20px;
+    font-size: 1.1rem;
+    width: 20rem;
+    transition: 0.3s ease-in-out;
+    max-width: 15rem;
+    margin-bottom: 1rem;
+
+}
+
+.Get-Started-Btn:hover {
+    background: linear-gradient(to right, #f5ebff, #edfff7);
+    color: #7d35f9;
+    scale: 1.03;
+    box-shadow: 0px 0px 5px 0.2px #7d35f9;
+    transition: .3s;
+}
+
+
+/*? Fifth Section */
+
+.fifth-section {
+    height: 40rem;
+}
+
+.fifth-section-div .right img {
+    width: 31rem;
+    border-radius: 10px;
+    box-shadow: 3px -3px 1px 3px #8822f8;
+}
+
+.fifth-section-div .left p {
+    color: #535353;
+}
+
+.fifth-section-div .left h1 {
+    width: 65%;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+
+/*? Footer Section  */
+
+.footer {
+    background: #f6f2ff;
+    height: 25rem;
+    padding: 5rem 0;
+    position: relative;
+}
+
+.footer-logo {
+    width: 18rem;
+    margin-right: 2rem;
+    padding: 1rem 0rem;
+}
+
+.footer-logo img {
+    height: 60px;
+    margin-bottom: 1rem;
+}
+
+.Explore,
+.Find-Yours,
+.social-links {
+    margin-right: 2rem;
+    padding: 1rem 0rem;
+}
+
+.social-links .links a {
+    font-size: 2rem;
+}
+
+.social-links .links {
+    margin: 1.2rem 0;
+}
+
+.footer-div a {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    transition: .2s;
+
+}
+
+.footer-div a:hover {
+    color: #7d35f9;
+    transition: .2s;
+}
+
+
+/* 
+===============================
+? => Admin Dashboard Section
+===============================
+*/
+
+.Main-Admin-Dashboard-Section {
+    padding-top: 120px;
+}
+
+.Add-Quiz-button,
+.Finish-Quiz-button {
+    margin: 1rem 0;
+}
+
+.Add-Quiz-button {
+    margin-right: 1rem;
+}
+
+.Main-Admin-Dashboard-Section .Question-h1 {
+    background: linear-gradient(45deg, #5009d0, transparent);
+    color: white;
+    padding: 8px 20px;
+    border-radius: 10px;
+    font-size: 1.8rem;
+    margin-top: 2rem;
+}
+
+.Main-Admin-Dashboard-Section .Details-h1 {
+    background: var(--btn-gradient-rev);
+    color: white;
+    padding: 8px 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.Main-Admin-Dashboard-Section h5 {
+    display: inline-block;
+    padding: 7px 25px;
+    background: linear-gradient(to right, #f1f2ff, #f6eefd);
+    border-radius: 7px;
+    color: #8801ee;
+    box-shadow: 0px 0px 2px 0.1px #7d35f9
+}
+
+
+.Main-Admin-Dashboard-Section .options label {
+    background: linear-gradient(to right, #f1f2ff, #f6eefd);
+    padding: 9px 10px;
+    color: black;
+    border-radius: 8px;
+}
+
+.Main-Admin-Dashboard-Section .options select {
+    padding: 7px 12px;
+    background: linear-gradient(to right, #f1f2ff, #f6eefd);
+    border-radius: 7px;
+    color: #8801ee;
+    border: none;
+    outline: 2px solid #a176ff;
+}
+
+
+/* 
+===============================
+? => Student Dashboard Section
+===============================
+*/
+
+.Quizes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.Quiz {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid gray;
+    padding: 2rem 3rem;
+    margin: 1rem;
+    border-radius: 15px;
+    min-width: 25rem;
+}
+
+
+.Participate-Btn {
+    border: none;
+    background: linear-gradient(to right, #dbddff, #f2e3ff);
+    color: black;
+    padding: 12px 0px;
+    border-radius: 20px;
+    font-size: 1.1rem;
+    width: 20rem;
+    transition: 0.3s ease-in-out;
+    max-width: 15rem;
+    margin-bottom: 1rem;
+}
+
+
+.Participate-Btn:hover {
+    background: linear-gradient(to right, #f5ebff, #edfff7);
+    color: #7d35f9;
+    scale: 1.03;
+    box-shadow: 0px 0px 5px 0.2px #7d35f9;
+    transition: .3s;
+
+}
+
+.results {
+    margin-left: 1rem;
+    padding: 27px 14px;
+    border-right: 2px solid #ab0df0;
+}
+
+.results h1 {
+    background: linear-gradient(45deg, #8213d3, #1121e4);
+    color: white;
+    font-size: 2.2rem;
+    padding: 3px 12px;
+    border-radius: 10px;
+}
