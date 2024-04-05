@@ -1,5 +1,5 @@
 
-# SecureGate 
+# Quizee 
 Welcome To Quizee, Here You can create your Quizzes and Also You can Participate differnet Quizzes.
 
 
