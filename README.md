@@ -1,6 +1,6 @@
 
 # Quizee 
-Welcome To Quizee, Here You can create your Quizzes and Also You can Participate differnet Quizzes.
+Quizee is a Platform that allows Admin users to create Quizzes and Also for students user can Participate differnet Quizzes.
 
 
 ## Hoisted Link
