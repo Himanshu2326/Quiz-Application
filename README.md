@@ -17,7 +17,7 @@ https://quiz-application-rosy.vercel.app/
 
 - A Complete Quiz Application.
 - Admin can create Quizzes.
-- Students can Participate in Multiple Quizs
+- Students can Participate in Multiple Quizzes
 - MongoDB Atlas DataBase Connectivity.
 
 
