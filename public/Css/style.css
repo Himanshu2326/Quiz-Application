@@ -994,6 +994,10 @@ p {
         width: 15rem;
     }
 
+    .overlay-text{
+        padding: 0 !important;
+    }
+
 }
 
 @media (max-width:400px) {
@@ -1027,9 +1031,10 @@ p {
 
     .Hero-btn,
     .Hero-btn2 {
-        width: 5rem;
+        width: 8rem;
+        margin-bottom: 0.6rem;
         padding: 5px 3px !important;
-        font-size: 0.6rem;
+        font-size: 0.9rem;
         border-radius: 7px;
     }
 
@@ -1039,6 +1044,7 @@ p {
 
     .third-section h4 {
         font-size: 0.9rem;
+        color: rgb(141, 34, 241);
     }
 
     .third-section-div {
@@ -1046,18 +1052,19 @@ p {
     }
 
     .fourth-section {
-        height: 20rem;
+        height: 14rem;
     }
 
     .fourth-section .overlay-text h1 {
         font-size: 1.2rem;
         min-width: 15.5rem;
+        margin-bottom: 0.3rem;
     }
 
     .fourth-section .Get-Started-Btn {
         padding: 6px 6px;
         border-radius: 7px;
-        font-size: 0.5rem;
+        font-size: 0.7rem;
         margin-bottom: 0.2rem;
     }
 
@@ -1088,12 +1095,12 @@ p {
     .fifth-section .Get-Started-Btn {
         padding: 8px 0px;
         border-radius: 7px;
-        font-size: 0.7rem;
-        width: 6rem;
+        font-size: 0.8rem;
+        width: 7rem;
     }
 
     .card {
-        max-width: 11rem;
+        max-width: 14rem;
     }
 
     .card .card-btn {
@@ -1102,14 +1109,14 @@ p {
     }
 
     .card .img img {
-        height: 100px;
-        width: 150px;
+        height: 120px;
+        width: 170px;
     }
 
     .card p {
-        font-size: 0.5rem;
+        font-size: 0.7rem;
         color: #e6e6e6;
-        margin: 0.2rem;
+        margin: 0.9rem;
     }
 
     .footer-div p {
@@ -1135,6 +1142,14 @@ p {
 
     .social-links .links {
         margin: 0.4rem 0;
+    }
+
+    .quizBtns{
+        flex-direction: column;
+    }
+
+    .steps .step img{
+        box-shadow: 0px 0px 3px 0px #e7d8ff;
     }
 
 }
