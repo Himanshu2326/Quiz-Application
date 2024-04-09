@@ -998,11 +998,19 @@ p {
 
 @media (max-width:400px) {
 
+    #Navbar {
+        height: 55px;
+    }
+
+    .Logo img {
+        height: 45px;
+    }
+
     .logout-button {
-        width: 5rem;
+        width: 4.3rem;
         border-radius: 7px;
-        font-size: 0.9rem;
-        padding: 5px 2px;
+        font-size: 0.8rem;
+        padding: 4px 2px;
     }
 
     .first-section .leftSide h1 {
@@ -1124,9 +1132,9 @@ p {
     .social-links .links a {
         font-size: 1.8rem;
     }
-    
+
     .social-links .links {
         margin: 0.4rem 0;
-    }    
+    }
 
 }
