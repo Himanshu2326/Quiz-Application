@@ -283,11 +283,11 @@ p {
 
 
 .card {
-    padding: 25px 25px;
+    padding: 12px 10px;
     background: linear-gradient(to top, #5735f9 50%, #fff 50%);
     text-align: center;
-    max-width: 22rem;
-    margin: 0 2rem;
+    max-width: 20rem;
+    margin: 0 1rem;
     color: white;
     border-radius: 20px;
     border: none;
@@ -378,11 +378,13 @@ p {
 .fourth-section .overlay-text h1 {
     color: white;
     z-index: 2;
+    text-align: center;
     margin-bottom: 1rem;
 }
 
 .fourth-section .overlay-text h5 {
     color: #e4e4e4;
+    text-align: center;
     z-index: 2;
 }
 
@@ -424,6 +426,18 @@ p {
     height: 40rem;
 }
 
+.fifth-section-div {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.fifth-section-div .right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
 .fifth-section-div .right img {
     width: 31rem;
     border-radius: 10px;
@@ -435,7 +449,7 @@ p {
 }
 
 .fifth-section-div .left h1 {
-    width: 65%;
+    width: 95%;
     font-size: 3rem;
     font-weight: bold;
     margin-bottom: 1rem;
@@ -488,6 +502,12 @@ p {
 .footer-div a:hover {
     color: #7d35f9;
     transition: .2s;
+}
+
+.footer-div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
 }
 
 
@@ -615,4 +635,498 @@ p {
     font-size: 2.2rem;
     padding: 3px 12px;
     border-radius: 10px;
+}
+
+
+/* 
+============================
+? => Responsive Code :- 
+============================
+*/
+
+
+@media (max-width:1250px) {
+
+
+    .second-section {
+        height: fit-content;
+    }
+
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+        background: linear-gradient(to left, #7f3cc2, #9126fd);
+        margin: 1rem;
+    }
+
+    .card {
+        margin: 1rem 0;
+    }
+
+    .card:last-child {
+        left: 50%;
+    }
+
+
+}
+
+@media (max-width:1160px) {
+
+    #Navbar {
+        margin-top: -3rem;
+    }
+
+    .first-section {
+        height: calc(90vh - 0px);
+        padding: 0 4rem !important;
+        margin: 3rem 0;
+    }
+
+    .rightSide img {
+        height: 25rem;
+    }
+
+    .leftSide h1 {
+        font-size: 2rem;
+    }
+
+    .Hero-btn {
+        padding: 5px 8px;
+        width: 8rem;
+        font-size: 0.9rem;
+        margin-right: 6px;
+    }
+
+    .Hero-btn2 {
+        padding: 5px 8px;
+        width: 8rem;
+        font-size: 0.9rem;
+        margin-right: 6px;
+    }
+
+    .fifth-section-div .right img {
+        height: 17rem;
+        width: 25rem;
+    }
+
+    .fifth-section-div .left h1 {
+        font-size: 2.1rem;
+    }
+}
+
+
+
+@media (max-width:1070px) {
+
+    .leftSide p {
+        max-width: 20rem;
+        font-size: 0.9rem;
+    }
+
+    .third-section {
+        height: fit-content;
+    }
+
+    .steps {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .step {
+        margin: 1rem 0;
+    }
+
+    .step:last-child {
+        position: relative;
+        left: 50%;
+    }
+
+}
+
+@media (max-width:900px) {
+
+    .card-container {
+        grid-template-columns: repeat(1, 1fr);
+        background: linear-gradient(to left, #7f3cc2, #9021ff);
+        margin: 1rem;
+    }
+
+    .card-container {
+        padding: 0 1rem !important;
+    }
+
+    .card:last-child {
+        left: 0%;
+    }
+
+    .steps {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .step:last-child {
+        position: relative;
+        left: 0%;
+    }
+
+    .fifth-section-div .right img {
+        height: 12rem;
+        width: 18rem;
+    }
+
+    .fifth-section-div .left h1 {
+        font-size: 1.5rem;
+    }
+
+    .fifth-section-div .left p {
+        font-size: 0.8rem;
+    }
+
+    .Get-Started-Btn {
+        padding: 9px 0px;
+        border-radius: 10px;
+        font-size: 0.9rem;
+        width: 8rem;
+    }
+
+    .fourth-section .Get-Started-Btn {
+        padding: 9px 10px;
+        border-radius: 10px;
+        font-size: 0.9rem;
+        width: fit-content;
+    }
+
+    .footer {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+
+    .footer-div {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 3rem 0px;
+    }
+
+    .Find-Yours {
+        margin-right: 12rem;
+    }
+
+    .footer-div p {
+        font-size: 0.9rem;
+        max-width: 17rem;
+    }
+
+    .footer-div a {
+        font-size: 0.9rem;
+    }
+
+    .footer {
+        height: fit-content;
+    }
+}
+
+@media (max-width:850px) {
+
+    .logout-button {
+        width: 7rem;
+    }
+
+    .rightSide img {
+        height: 23rem;
+    }
+
+    .leftSide h1 {
+        font-size: 1.7rem;
+    }
+
+    .Hero-btn {
+        width: 7rem;
+        font-size: 0.8rem;
+    }
+
+    .Hero-btn2 {
+        width: 7rem;
+        font-size: 0.8rem;
+    }
+
+    .leftSide p {
+        max-width: 17rem;
+        font-size: 0.7rem;
+    }
+
+}
+
+
+@media (max-width:768px) {
+
+    .first-section-div {
+        flex-direction: column;
+    }
+
+    .first-section .leftSide {
+        width: 100% !important;
+        margin-top: 5rem;
+    }
+
+    .first-section .rightSide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .fifth-section-div {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .fifth-section-div .left p {
+        width: 60%;
+    }
+
+    .Links-Section ul {
+        display: none;
+    }
+
+    .card {
+        max-width: 17rem;
+    }
+
+    .card .img img {
+        height: 150px;
+        width: 235px;
+    }
+
+    .third-section {
+        padding: 0 1rem !important;
+    }
+
+    .third-section h1 {
+        font-size: 2.1rem;
+    }
+
+    .third-section h4 {
+        font-size: 1.2rem;
+    }
+
+    .fourth-section .overlay-text h1 {
+        font-size: 2rem;
+    }
+
+    .fourth-section .overlay-text h5 {
+        font-size: 1rem;
+    }
+}
+
+
+@media (max-width:578px) {
+
+    #Navbar {
+        padding: 0 1rem !important;
+    }
+
+    .Logo img {
+        height: 55px;
+    }
+
+    .first-section .leftSide {
+        width: 100% !important;
+        margin-top: 0rem;
+    }
+
+    .footer-div {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 3rem 0px;
+        place-items: baseline;
+    }
+
+    .footer {
+        padding: 0 2rem !important;
+    }
+
+    .rightSide img {
+        height: 18rem;
+    }
+
+    .first-section {
+        height: fit-content;
+        padding: 15px 1rem !important;
+    }
+
+    .second-section {
+        padding: 0 1rem !important;
+    }
+
+    .third-section h1 {
+        font-size: 1.7rem;
+        text-align: center;
+    }
+
+    .third-section h4 {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .fourth-section .overlay-text h1 {
+        font-size: 1.6rem;
+        min-width: 24rem;
+    }
+
+    .fourth-section .overlay-text h5 {
+        font-size: 0.8rem;
+    }
+
+    .fourth-section .Get-Started-Btn {
+        padding: 7px 7px;
+        border-radius: 7px;
+        font-size: 0.7rem;
+    }
+
+    .fifth-section {
+        height: 40rem;
+        padding: 0 1rem !important;
+    }
+
+    .fifth-section-div .left p {
+        width: 75%;
+    }
+
+    .fifth-section-div {
+        padding: 0 1rem !important;
+    }
+
+    .fifth-section-div .right img {
+        height: 10rem;
+        width: 15rem;
+    }
+
+}
+
+@media (max-width:400px) {
+
+    .logout-button {
+        width: 5rem;
+        border-radius: 7px;
+        font-size: 0.9rem;
+        padding: 5px 2px;
+    }
+
+    .first-section .leftSide h1 {
+        font-size: 1.5rem;
+    }
+
+    .first-section .leftSide p {
+        font-size: 0.6rem;
+    }
+
+    .fifth-section .rightSide img {
+        height: 15rem;
+    }
+
+    .Hero-btn,
+    .Hero-btn2 {
+        width: 5rem;
+        padding: 5px 3px !important;
+        font-size: 0.6rem;
+        border-radius: 7px;
+    }
+
+    .third-section h1 {
+        font-size: 1.4rem;
+    }
+
+    .third-section h4 {
+        font-size: 0.9rem;
+    }
+
+    .third-section-div {
+        padding: 0 1rem !important;
+    }
+
+    .fourth-section {
+        height: 20rem;
+    }
+
+    .fourth-section .overlay-text h1 {
+        font-size: 1.2rem;
+        min-width: 15.5rem;
+    }
+
+    .fourth-section .Get-Started-Btn {
+        padding: 6px 6px;
+        border-radius: 7px;
+        font-size: 0.5rem;
+        margin-bottom: 0.2rem;
+    }
+
+    .fourth-section .overlay-text h5 {
+        width: 12rem;
+        font-size: 0.6rem;
+    }
+
+    .fourth-section .overlay-text p {
+        text-align: center;
+        font-size: 0.6rem;
+    }
+
+    .fifth-section {
+        height: fit-content;
+        margin: 3rem 0;
+    }
+
+    .fifth-section-div .right img {
+        height: 8rem;
+        width: 12rem;
+    }
+
+    .fifth-section-div .left h1 {
+        font-size: 1.3rem;
+    }
+
+    .fifth-section .Get-Started-Btn {
+        padding: 8px 0px;
+        border-radius: 7px;
+        font-size: 0.7rem;
+        width: 6rem;
+    }
+
+    .card {
+        max-width: 11rem;
+    }
+
+    .card .card-btn {
+        padding: 4px 12px;
+        font-size: 0.7rem;
+    }
+
+    .card .img img {
+        height: 100px;
+        width: 150px;
+    }
+
+    .card p {
+        font-size: 0.5rem;
+        color: #e6e6e6;
+        margin: 0.2rem;
+    }
+
+    .footer-div p {
+        max-width: 80%;
+    }
+
+    .footer-logo {
+        width: fit-content;
+        width: 14rem;
+    }
+
+    .footer-div p {
+        font-size: 0.75rem;
+    }
+
+    .footer-div h5 {
+        width: 8rem;
+    }
+
+    .social-links .links a {
+        font-size: 1.8rem;
+    }
+    
+    .social-links .links {
+        margin: 0.4rem 0;
+    }    
+
 }
