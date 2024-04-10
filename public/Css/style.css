@@ -120,6 +120,7 @@ body {
     background: white;
     display: flex;
     height: 100vh;
+    max-height: 40rem;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -171,7 +172,7 @@ body {
 }
 
 .left-Img {
-    height: 25rem;
+    height: 20rem;
 }
 
 .left-side p {
@@ -666,6 +667,16 @@ p {
         left: 50%;
     }
 
+    .main-div-login {
+        padding: 0 2rem;
+        max-height: 35rem;
+    }
+
+    .main-div-index .left-side {
+        width: 40% !important;
+    }
+
+
 
 }
 
@@ -819,6 +830,26 @@ p {
     .footer {
         height: fit-content;
     }
+
+
+    .main-div-index .left-Img {
+        height: 20rem;
+    }
+
+    .main-div-index .left-side .left-text {
+        padding: 0 1rem !important;
+    }
+
+    .main-div-login h3 {
+        margin: 1rem;
+    }
+
+    .main-div-login {
+        padding: 0 1rem;
+        max-height: 30rem;
+    }
+
+
 }
 
 @media (max-width:850px) {
@@ -910,6 +941,29 @@ p {
     .fourth-section .overlay-text h5 {
         font-size: 1rem;
     }
+
+
+    .main-div-index .left-side {
+        display: none !important;
+    }
+
+    .main-div-index .right-side {
+        background: var(--btn-gradient-rev);
+    }
+
+    
+    .LoginBtn {
+        background: white;
+        color: #770fea;
+        font-weight: 500;
+        box-shadow: 0px 0px 1px 2px inset #7f11f9;
+        padding: 12px 15px;
+        border-radius: 10px;
+    }
+
+    .LoginBtn:hover{
+        color: white;
+    }
 }
 
 
@@ -994,27 +1048,50 @@ p {
         width: 15rem;
     }
 
-    .overlay-text{
-        padding: 0 !important;
+    .main-div-login {
+        padding: 0 1.5rem;
+        max-height: 25rem;
+        box-shadow: 5px -5px 0px 1px #b2adff;
     }
+
+    .main-div-index .right-side {
+        padding: 1rem !important;
+    }
+
+    .main-div-login h3 {
+        margin: 0.5rem 0;
+        font-size: 1.2rem;
+    }
+
+    .main-div-index .form-group {
+        margin-bottom: 0.5rem;
+    }
+
+    .main-div-login .button {
+        width: 5rem;
+        padding: 5px 10px;
+        border-radius: 10px;
+        font-size: 1rem;
+    }
+
+
+    .Back-Btn {
+        border: none;
+        padding: 4px;
+        font-size: 0.7rem;
+        width: 4rem;
+    }
+
 
 }
 
 @media (max-width:400px) {
 
-    #Navbar {
-        height: 55px;
-    }
-
-    .Logo img {
-        height: 45px;
-    }
-
     .logout-button {
-        width: 4.3rem;
+        width: 5rem;
         border-radius: 7px;
-        font-size: 0.8rem;
-        padding: 4px 2px;
+        font-size: 0.9rem;
+        padding: 5px 2px;
     }
 
     .first-section .leftSide h1 {
@@ -1031,10 +1108,9 @@ p {
 
     .Hero-btn,
     .Hero-btn2 {
-        width: 8rem;
-        margin-bottom: 0.6rem;
+        width: 5rem;
         padding: 5px 3px !important;
-        font-size: 0.9rem;
+        font-size: 0.6rem;
         border-radius: 7px;
     }
 
@@ -1044,7 +1120,6 @@ p {
 
     .third-section h4 {
         font-size: 0.9rem;
-        color: rgb(141, 34, 241);
     }
 
     .third-section-div {
@@ -1052,19 +1127,18 @@ p {
     }
 
     .fourth-section {
-        height: 14rem;
+        height: 20rem;
     }
 
     .fourth-section .overlay-text h1 {
         font-size: 1.2rem;
         min-width: 15.5rem;
-        margin-bottom: 0.3rem;
     }
 
     .fourth-section .Get-Started-Btn {
         padding: 6px 6px;
         border-radius: 7px;
-        font-size: 0.7rem;
+        font-size: 0.5rem;
         margin-bottom: 0.2rem;
     }
 
@@ -1095,12 +1169,12 @@ p {
     .fifth-section .Get-Started-Btn {
         padding: 8px 0px;
         border-radius: 7px;
-        font-size: 0.8rem;
-        width: 7rem;
+        font-size: 0.7rem;
+        width: 6rem;
     }
 
     .card {
-        max-width: 14rem;
+        max-width: 11rem;
     }
 
     .card .card-btn {
@@ -1109,14 +1183,14 @@ p {
     }
 
     .card .img img {
-        height: 120px;
-        width: 170px;
+        height: 100px;
+        width: 150px;
     }
 
     .card p {
-        font-size: 0.7rem;
+        font-size: 0.5rem;
         color: #e6e6e6;
-        margin: 0.9rem;
+        margin: 0.2rem;
     }
 
     .footer-div p {
@@ -1142,14 +1216,6 @@ p {
 
     .social-links .links {
         margin: 0.4rem 0;
-    }
-
-    .quizBtns{
-        flex-direction: column;
-    }
-
-    .steps .step img{
-        box-shadow: 0px 0px 3px 0px #e7d8ff;
     }
 
 }
