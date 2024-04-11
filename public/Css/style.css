@@ -580,6 +580,9 @@ p {
 ? => Student Dashboard Section
 ===============================
 */
+.Student-Dashboard-Section {
+    flex-direction: column;
+}
 
 .Quizes {
     display: grid;
@@ -593,7 +596,7 @@ p {
     align-items: center;
     justify-content: center;
     border: 1px solid gray;
-    padding: 2rem 3rem;
+    padding: 2rem 2rem;
     margin: 1rem;
     border-radius: 15px;
     min-width: 25rem;
@@ -624,9 +627,13 @@ p {
 }
 
 .results {
-    margin-left: 1rem;
+    margin-top: 2rem;
     padding: 27px 14px;
-    border-right: 2px solid #ab0df0;
+    border-bottom: 2px solid #ab0df0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
 }
 
 .results h1 {
@@ -675,6 +682,10 @@ p {
         width: 40% !important;
     }
 
+    .Quiz {
+        padding: 2rem 1rem;
+    }
+
 
 }
 
@@ -682,6 +693,11 @@ p {
 
     #Navbar {
         margin-top: -3rem;
+    }
+
+    .Student-Dashboard-Navbar,
+    .Student-Dashboard-Navbar {
+        margin-top: 0rem !important;
     }
 
     .first-section {
@@ -936,7 +952,7 @@ p {
     .fourth-section .overlay-text h5 {
         font-size: 1rem;
     }
-    
+
     .main-div-index .left-side {
         display: none !important;
     }
@@ -944,7 +960,7 @@ p {
     .main-div-index .right-side {
         background: var(--btn-gradient-rev);
     }
-     
+
     .LoginBtn {
         background: white;
         color: #770fea;
@@ -954,8 +970,12 @@ p {
         border-radius: 10px;
     }
 
-    .LoginBtn:hover{
+    .LoginBtn:hover {
         color: white;
+    }
+
+    .Quizes {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
@@ -1073,6 +1093,47 @@ p {
         padding: 4px;
         font-size: 0.7rem;
         width: 4rem;
+    }
+
+    .Student-Dashboard-Section {
+        padding: 3rem 1rem !important;
+    }
+
+    .results h1 {
+        font-size: 1.7rem;
+        padding: 5px 12px;
+        width: fit-content;
+    }
+
+    .Quiz {
+        min-width: 20rem;
+    }
+
+    .Quiz h3,
+    .Result h3 {
+        font-size: 1.4rem;
+    }
+
+    .Quiz h1 {
+        font-size: 1.8rem;
+    }
+
+    .Participate-Btn {
+        padding: 6px 0px;
+        border-radius: 10px;
+        font-size: 1.1rem;
+        width: 8rem;
+        max-width: 8rem;
+    }
+
+    .Main-Admin-Dashboard-Section {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+
+    }
+
+    .Main-Admin-Dashboard-Section-div {
+        padding: 1rem !important;
     }
 
 }
@@ -1221,12 +1282,66 @@ p {
         margin: 0.4rem 0;
     }
 
-    .quizBtns{
+    .quizBtns {
         flex-direction: column;
     }
 
-    .steps .step img{
+    .steps .step img {
         box-shadow: 0px 0px 3px 0px #e7d8ff;
     }
 
+    .Quiz {
+        min-width: 16rem;
+        padding: 1rem 1rem
+    }
+
+    .Quiz h1 {
+        font-size: 1.4rem;
+    }
+
+    .Quiz h3,
+    .Result h3 {
+        font-size: 1.2rem;
+    }
+
+    .results {
+        padding: 15px 0px;
+    }
+
+    .Main-Admin-Dashboard-Section {
+        padding-top: 100px;
+    }
+
+    .Main-Admin-Dashboard-Section .Details-h1 {
+        font-size: 1.2rem;
+    }
+
+    .Main-Admin-Dashboard-Section .Question-h1 {
+        font-size: 1.2rem;
+    }
+
+    .Add-Quiz-button {
+        font-size: 0.9rem;
+        width: 6rem;
+        margin-right: 0.2rem;
+    }
+
+    .Finish-Quiz-button {
+        width: 5rem;
+        font-size: 0.9rem;
+    }
+
+
+    .Main-Admin-Dashboard-Section h5 {
+        font-size: 1rem;
+        padding: 6px 15px;
+    }
+
+    .Main-Admin-Dashboard-Section .options select {
+        font-size: 0.7rem;
+    }
+
+    .Main-Admin-Dashboard-Section .options label {
+        padding: 6px 7px;
+    }
 }
