@@ -1,6 +1,6 @@
 
 # Quizee 
-Quizee is a Platform that allows Admin users to create Quizzes and Also for students user can Participate differnet Quizzes.
+Quizee is a Platform where Admin can create Quizzes and students can Participate differnet Quizzes.
 
 
 ## Hoisted Link
