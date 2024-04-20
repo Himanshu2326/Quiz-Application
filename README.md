@@ -19,7 +19,7 @@ https://quiz-application-rosy.vercel.app/
 - Admin can create Quizzes.
 - Students can Participate in Multiple Quizzes
 - MongoDB Atlas DataBase Connectivity.
-- All Device Responsive.
+- All Device Responsive with a Unique UI/UX.
 
 
 
